@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="BU_CategoryID_NoNull" xml:space="preserve">
+    <value>企業用戶類別不能為空!</value>
+  </data>
+  <data name="BU_CompanyName_NotNull" xml:space="preserve">
+    <value>公司名稱不能為空!</value>
+  </data>
+  <data name="BU_CompanyNo_NotNull" xml:space="preserve">
+    <value>公司編號不能為空!</value>
+  </data>
+  <data name="Question_Cancel" xml:space="preserve">
+    <value>您確定要放棄嗎？</value>
+  </data>
+  <data name="Question_Exit" xml:space="preserve">
+    <value>您確定要離開嗎？</value>
+  </data>
+  <data name="BU_DepartmentID_Exists" xml:space="preserve">
+    <value>部門編號已經存在!</value>
+  </data>
+  <data name="BU_DepartmentID_NotNull" xml:space="preserve">
+    <value>部門編號不能為空!</value>
+  </data>
+  <data name="BU_DepartmentName_NotNull" xml:space="preserve">
+    <value>部門名稱不能為空!</value>
+  </data>
+  <data name="BU_Detail_LinkMan_NoNull" xml:space="preserve">
+    <value>連絡人員不能為空!</value>
+  </data>
+  <data name="BU_EnterpriseEName_NotNull" xml:space="preserve">
+    <value>企業英文名稱不能為空!</value>
+  </data>
+  <data name="BU_EnterpriseID_Exists" xml:space="preserve">
+    <value>企業用戶編號已經存在!</value>
+  </data>
+  <data name="BU_EnterpriseID_NotNull" xml:space="preserve">
+    <value>企業用戶編號不能為空!</value>
+  </data>
+  <data name="BU_EnterpriseName_NotNull" xml:space="preserve">
+    <value>企業用戶名稱不能為空!</value>
+  </data>
+  <data name="BU_EnterpriseSName_NotNull" xml:space="preserve">
+    <value>企業用戶簡稱不能為空!</value>
+  </data>
+  <data name="BU_UnionID_NotNull" xml:space="preserve">
+    <value>官方編號不能為空!</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>覆核</value>
+  </data>
+  <data name="Desktop" xml:space="preserve">
+    <value>桌面</value>
+  </data>
+  <data name="Question_ExitSystem" xml:space="preserve">
+    <value>您確定要退出系統嗎？</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Question_Relogin" xml:space="preserve">
+    <value>您確定要重新登錄嗎</value>
+  </data>
+  <data name="UnCheck" xml:space="preserve">
+    <value>取消覆核</value>
+  </data>
+  <data name="AnnounceFlag1" xml:space="preserve">
+    <value>營運單位</value>
+  </data>
+  <data name="AnnounceFlag2" xml:space="preserve">
+    <value>企業用戶</value>
+  </data>
+  <data name="AnnounceSource1" xml:space="preserve">
+    <value>自建</value>
+  </data>
+  <data name="AnnounceSource2" xml:space="preserve">
+    <value>系統發送</value>
+  </data>
+  <data name="Sys_Content_NotNull" xml:space="preserve">
+    <value>公告內容不能為空</value>
+  </data>
+  <data name="Sys_Title_NotNull" xml:space="preserve">
+    <value>公告標題不能為空</value>
+  </data>
+  <data name="Sys_Receiver_NotNull" xml:space="preserve">
+    <value>請選取公告對象</value>
+  </data>
+  <data name="BU_PersonID_NotNull" xml:space="preserve">
+    <value>人員編號不能為空!</value>
+  </data>
+  <data name="BU_PersonName_NotNull" xml:space="preserve">
+    <value>人員姓名不能為空!</value>
+  </data>
+  <data name="BU_Post_NotNull" xml:space="preserve">
+    <value>職稱不能為空!</value>
+  </data>
+  <data name="BU_PersonID_Exists" xml:space="preserve">
+    <value>人員編號已經存在!</value>
+  </data>
+  <data name="EP_ProductID_Exists" xml:space="preserve">
+    <value>產品編號已經存在!</value>
+  </data>
+  <data name="EP_OfficalUrl_NotNull" xml:space="preserve">
+    <value>官方網址不能為空!</value>
+  </data>
+  <data name="EP_ProductID_NotNull" xml:space="preserve">
+    <value>產品編號不能為空!</value>
+  </data>
+  <data name="EP_ProductName_NotNull" xml:space="preserve">
+    <value>產品品名不能為空!</value>
+  </data>
+  <data name="EP_ServicePhone_NotNull" xml:space="preserve">
+    <value>服務電話不能為空!</value>
+  </data>
+  <data name="EP_Area_NotNull" xml:space="preserve">
+    <value>地區不能為空!</value>
+  </data>
+  <data name="EP_GaranteeDate_NotNull" xml:space="preserve">
+    <value>保固日期不能為空!</value>
+  </data>
+  <data name="EP_LogisticsID_NotNull" xml:space="preserve">
+    <value>物流資訊編號不能為空!</value>
+  </data>
+  <data name="EP_ProduceDate_NotNull" xml:space="preserve">
+    <value>生產日期不能為空!</value>
+  </data>
+  <data name="EP_ResumeID_NotNull" xml:space="preserve">
+    <value>生產履歷編號不能為空!</value>
+  </data>
+  <data name="EP_StyleID_Exists" xml:space="preserve">
+    <value>款式編號已經存在!</value>
+  </data>
+  <data name="LB_AntiCounterfeitType_NotNull" xml:space="preserve">
+    <value>標籤防偽類型不能為空!</value>
+  </data>
+  <data name="LB_LabelMode_NotNull" xml:space="preserve">
+    <value>標籤模式不能為空!</value>
+  </data>
+  <data name="LB_StyleID_NotNull" xml:space="preserve">
+    <value>標籤款式編號不能為空!</value>
+  </data>
+  <data name="EP_ProductLogisticsNoCheckTitle" xml:space="preserve">
+    <value>企業用戶物流資訊設定(未認證)[ 單筆明細畫面 ]</value>
+  </data>
+  <data name="EP_ProductNoCheckTitle" xml:space="preserve">
+    <value>企業用戶產品設定(未認證)[ 單筆明細畫面 ]</value>
+  </data>
+  <data name="EP_ProductResumeNoCheckTitle" xml:space="preserve">
+    <value>企業用戶生産履歷設定(未認證)[ 單筆明細畫面 ]</value>
+  </data>
+  <data name="BusinessUnit" xml:space="preserve">
+    <value>營運單位</value>
+  </data>
+  <data name="CustomerComplaints" xml:space="preserve">
+    <value>客服申訴</value>
+  </data>
+  <data name="Enterprise" xml:space="preserve">
+    <value>企業用戶</value>
+  </data>
+  <data name="NoCheck" xml:space="preserve">
+    <value>未檢查</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="EP_Check" xml:space="preserve">
+    <value>企業覆核</value>
+  </data>
+  <data name="EP_UnCheck" xml:space="preserve">
+    <value>取消企業覆核</value>
+  </data>
+  <data name="BU_Check" xml:space="preserve">
+    <value>營運覆核</value>
+  </data>
+  <data name="BU_UnCheck" xml:space="preserve">
+    <value>取消營運覆核</value>
+  </data>
+  <data name="Sys_ReadMessage" xml:space="preserve">
+    <value>閱讀公告管理</value>
+  </data>
+  <data name="CT_Country_NotNull" xml:space="preserve">
+    <value>國別不能為空</value>
+  </data>
+  <data name="CT_Mail_NotNull" xml:space="preserve">
+    <value>電子郵件不能為空</value>
+  </data>
+  <data name="CT_MemberID_Exists" xml:space="preserve">
+    <value>會員ID已經存在</value>
+  </data>
+  <data name="CT_MemberID_NotNull" xml:space="preserve">
+    <value>會員ID不能為空</value>
+  </data>
+  <data name="CT_MemberName_NotNull" xml:space="preserve">
+    <value>會員姓名不能為空</value>
+  </data>
+  <data name="CT_PasswordHint_NotNull" xml:space="preserve">
+    <value>密碼提示不能為空</value>
+  </data>
+  <data name="CT_Password_NotNull" xml:space="preserve">
+    <value>密碼不能為空</value>
+  </data>
+  <data name="NotNull" xml:space="preserve">
+    <value>不能為空</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="UnStop" xml:space="preserve">
+    <value>取消停用</value>
+  </data>
+  <data name="NotDelete_Checked" xml:space="preserve">
+    <value>已經覆核不可刪除</value>
+  </data>
+  <data name="NotDelete_IsUsed" xml:space="preserve">
+    <value>已被使用不可刪除</value>
+  </data>
+  <data name="InvalidCheckCode" xml:space="preserve">
+    <value>您輸入的驗證碼不正確</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>您輸入的密碼不正確</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>登錄失敗：</value>
+  </data>
+  <data name="Question_Delete" xml:space="preserve">
+    <value>您確定要刪除嗎?</value>
+  </data>
+  <data name="KeyIn_Pages" xml:space="preserve">
+    <value>請輸入跳轉頁數</value>
+  </data>
+  <data name="KeyIn_RightPage" xml:space="preserve">
+    <value>請輸入正確頁碼</value>
+  </data>
+  <data name="SearchContent_NotNull" xml:space="preserve">
+    <value>查詢內容不能為空</value>
+  </data>
+  <data name="User_State0" xml:space="preserve">
+    <value>未啟用</value>
+  </data>
+  <data name="User_State1" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="User_State2" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="Password_NotNull" xml:space="preserve">
+    <value>密碼不能為空</value>
+  </data>
+  <data name="Password_NotSame" xml:space="preserve">
+    <value>確認密碼與密碼不符</value>
+  </data>
+  <data name="PersonID_NotNull" xml:space="preserve">
+    <value>員工編號 不能為空</value>
+  </data>
+  <data name="TrueName_NotNull" xml:space="preserve">
+    <value>真實姓名不能為空</value>
+  </data>
+  <data name="UserName_Exists" xml:space="preserve">
+    <value>登入帳號已經存在</value>
+  </data>
+  <data name="UserName_NotNull" xml:space="preserve">
+    <value>登入帳號不能為空</value>
+  </data>
+  <data name="EMail_NotNull" xml:space="preserve">
+    <value>電子郵件不能為空</value>
+  </data>
+  <data name="UserLevel0" xml:space="preserve">
+    <value>超級用戶</value>
+  </data>
+  <data name="UserLevel1" xml:space="preserve">
+    <value>管理用戶</value>
+  </data>
+  <data name="UserLevel2" xml:space="preserve">
+    <value>一般用戶</value>
+  </data>
+  <data name="UserState0" xml:space="preserve">
+    <value>未啟用</value>
+  </data>
+  <data name="UserState1" xml:space="preserve">
+    <value>啟用</value>
+  </data>
+  <data name="UserState2" xml:space="preserve">
+    <value>停用</value>
+  </data>
+  <data name="Exists" xml:space="preserve">
+    <value>已經存在</value>
+  </data>
+  <data name="RoleName_Exists" xml:space="preserve">
+    <value>角色名稱已經存在</value>
+  </data>
+  <data name="RoleName_NotNull" xml:space="preserve">
+    <value>角色名稱不能為空</value>
+  </data>
+  <data name="ProductCompare" xml:space="preserve">
+    <value>產品比對記錄查詢</value>
+  </data>
+  <data name="BU_CheckUser" xml:space="preserve">
+    <value>營運單位覆核人員</value>
+  </data>
+  <data name="EP_CheckUser" xml:space="preserve">
+    <value>企業單位覆核人員</value>
+  </data>
+  <data name="ProductLogisticsCompare" xml:space="preserve">
+    <value>產品物流資訊對比查詢</value>
+  </data>
+  <data name="ProductResumeCompare" xml:space="preserve">
+    <value>產品履歷對比查詢</value>
+  </data>
+  <data name="EP_ProductNo_Exists" xml:space="preserve">
+    <value>目前有修改待認證資料!</value>
+  </data>
+  <data name="Sub_NotNull" xml:space="preserve">
+    <value>明細不能為空</value>
+  </data>
+  <data name="RoleToUser_NotUser" xml:space="preserve">
+    <value>請先選取角色之用戶</value>
+  </data>
+  <data name="EP_ProductLogisticsID_Exists" xml:space="preserve">
+    <value>物流資訊編號已經存在</value>
+  </data>
+  <data name="EP_ProductResumeID_Exists" xml:space="preserve">
+    <value>生產履歷編號已經存在</value>
+  </data>
+  <data name="UserToRole_NotRole" xml:space="preserve">
+    <value>請選取用戶所屬之角色</value>
+  </data>
+  <data name="OldPassword_NotRight" xml:space="preserve">
+    <value>原密碼不正確</value>
+  </data>
+  <data name="UserPwdUpdate_Success" xml:space="preserve">
+    <value>密碼修改成功</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="CloseDateModify" xml:space="preserve">
+    <value>關帳日異動</value>
+  </data>
+  <data name="RecordBrowse" xml:space="preserve">
+    <value>瀏覽</value>
+  </data>
+  <data name="RecordEdit" xml:space="preserve">
+    <value>編輯</value>
+  </data>
+  <data name="RecordsQuery" xml:space="preserve">
+    <value>多筆查詢</value>
+  </data>
+  <data name="RecordView" xml:space="preserve">
+    <value>單筆查詢</value>
+  </data>
+  <data name="TheUserLogined" xml:space="preserve">
+    <value>對不起，此使用者在其他電腦已經登入！</value>
+  </data>
+  <data name="EP_ProductChecked" xml:space="preserve">
+    <value>未認證產品企業已經覆核，不可再轉入</value>
+  </data>
+  <data name="EP_ProductEnterpriseChecked" xml:space="preserve">
+    <value>未認證產品已經被企業覆核，不能新增或修改</value>
+  </data>
+  <data name="EP_ProductResumeEnterpriseChecked" xml:space="preserve">
+    <value>未認證產品履歷已經被企業覆核，不能新增或修改</value>
+  </data>
+  <data name="EP_ProductLogisticsEnterpriseChecked" xml:space="preserve">
+    <value>未認證産品物流資訊已經被企業覆核，不能新增或修改</value>
+  </data>
+  <data name="Select_Delete" xml:space="preserve">
+    <value>請先勾選要刪除的資料</value>
+  </data>
+  <data name="CheckState0" xml:space="preserve">
+    <value>未檢查</value>
+  </data>
+  <data name="CheckState1" xml:space="preserve">
+    <value>已檢查</value>
+  </data>
+  <data name="EP_NoCheckNotUpload" xml:space="preserve">
+    <value>企業沒有覆核，不可上傳</value>
+  </data>
+  <data name="EP_NoRecordNotUpload" xml:space="preserve">
+    <value>沒有認證資料，不可上傳</value>
+  </data>
+  <data name="EP_NoRecordNotCompare" xml:space="preserve">
+    <value>無資料比對</value>
+  </data>
+  <data name="EP_NoRecordNotCheck" xml:space="preserve">
+    <value>無資料覆核</value>
+  </data>
+  <data name="CopyPermissionLoading" xml:space="preserve">
+    <value>權限複製載入</value>
+  </data>
+  <data name="Question_CopyPermission" xml:space="preserve">
+    <value>此用戶已有授權功能權限,是否覆改舊有功能權限資料</value>
+  </data>
+  <data name="Login_Enterprise_NotExist" xml:space="preserve">
+    <value>企業編號不存在</value>
+  </data>
+  <data name="Login_Enterprise_NotNull" xml:space="preserve">
+    <value>請輸入企業編號</value>
+  </data>
+  <data name="Login_VerifyCode_NotNull" xml:space="preserve">
+    <value>請輸入驗證碼</value>
+  </data>
+  <data name="EP_ProductCheck" xml:space="preserve">
+    <value>企業產品認證</value>
+  </data>
+  <data name="EP_ProductLogisticsCheck" xml:space="preserve">
+    <value>企業產品物流資訊認證</value>
+  </data>
+  <data name="EP_ProductResumeCheck" xml:space="preserve">
+    <value>企業產品履歷認證</value>
+  </data>
+  <data name="EP_ProductCheckMessageContent" xml:space="preserve">
+    <value>產品已經認證，請查收</value>
+  </data>
+  <data name="EP_ProductCheckMessageTitle" xml:space="preserve">
+    <value>產品認證通知</value>
+  </data>
+  <data name="EP_ProdcutResumeCheckMessageContent" xml:space="preserve">
+    <value>產品履歷認已認證，請查收</value>
+  </data>
+  <data name="EP_ProdcutResumeCheckMessageTitle" xml:space="preserve">
+    <value>產品履歷認證通知</value>
+  </data>
+  <data name="EP_ProductLogisticsCheckMessageContent" xml:space="preserve">
+    <value>產品物流資訊認已認證，請查收</value>
+  </data>
+  <data name="EP_ProductLogisticsCheckMessageTitle" xml:space="preserve">
+    <value>產品物流資訊認證通知</value>
+  </data>
+  <data name="LB_VerificationMode0" xml:space="preserve">
+    <value>一問一答</value>
+  </data>
+  <data name="LB_VerificationMode1" xml:space="preserve">
+    <value>加解密</value>
+  </data>
+  <data name="EP_ProductLogisticsUploadSuccess" xml:space="preserve">
+    <value>企業未認證物流資訊上傳成功</value>
+  </data>
+  <data name="EP_ProductResumeUploadSuccess" xml:space="preserve">
+    <value>企業未認證產品履歷上傳成功</value>
+  </data>
+  <data name="EP_ProductUploadSuccess" xml:space="preserve">
+    <value>企業未認證產品上傳成功</value>
+  </data>
+  <data name="EP_ProdcutExcelNotExists" xml:space="preserve">
+    <value>上傳產品檔案不存在</value>
+  </data>
+  <data name="EP_ProdcutResumeExcelNotExists" xml:space="preserve">
+    <value>上傳產品履歷檔案不存在</value>
+  </data>
+  <data name="EP_ProductLogisticsExcelNotExists" xml:space="preserve">
+    <value>上傳物流資訊檔案不存在</value>
+  </data>
+  <data name="LB_IsLimitedProduct" xml:space="preserve">
+    <value>限用產品設定</value>
+  </data>
+  <data name="Upload_Cancel" xml:space="preserve">
+    <value>取消上傳</value>
+  </data>
+  <data name="Upload_Document" xml:space="preserve">
+    <value>文檔</value>
+  </data>
+  <data name="Upload_Files" xml:space="preserve">
+    <value>個文檔</value>
+  </data>
+  <data name="Upload_FileSize" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="Upload_FileSizeError" xml:space="preserve">
+    <value>大小異常</value>
+  </data>
+  <data name="Upload_FilesOver" xml:space="preserve">
+    <value>上傳文檔數量已超過</value>
+  </data>
+  <data name="Upload_FileTypeError" xml:space="preserve">
+    <value>類型不正確</value>
+  </data>
+  <data name="Upload_OverFileSize" xml:space="preserve">
+    <value>大小超出系統限制的</value>
+  </data>
+  <data name="Upload_Success" xml:space="preserve">
+    <value>文檔上傳成功</value>
+  </data>
+  <data name="Upload_CheckUseUnit" xml:space="preserve">
+    <value>請勾選使用單位</value>
+  </data>
+  <data name="EP_ProductDesc" xml:space="preserve">
+    <value>企業用戶產品資料</value>
+  </data>
+  <data name="EP_ProductLogistics" xml:space="preserve">
+    <value>企業用戶產品物流資訊</value>
+  </data>
+  <data name="EP_ProductResumeDesc" xml:space="preserve">
+    <value>企業用戶產品生產履歷</value>
+  </data>
+  <data name="Upload_FileType1" xml:space="preserve">
+    <value>一般檔案</value>
+  </data>
+  <data name="Upload_FileType2" xml:space="preserve">
+    <value>匯入格式檔</value>
+  </data>
+  <data name="EP_ProductLogisticsTabName" xml:space="preserve">
+    <value>物流資訊設定</value>
+  </data>
+  <data name="EP_ProductResumeTabName" xml:space="preserve">
+    <value>生產履歷設定</value>
+  </data>
+  <data name="EP_ProductTabName" xml:space="preserve">
+    <value>產品資料設定</value>
+  </data>
+  <data name="CheckState2" xml:space="preserve">
+    <value>已覆核</value>
+  </data>
+  <data name="CheckState3" xml:space="preserve">
+    <value>已上傳營運</value>
+  </data>
+  <data name="EP_CheckModifyMessage" xml:space="preserve">
+    <value>本次覆核項目包含修改項目,是否確認修改</value>
+  </data>
+  <data name="EP_CheckNoUploadImport" xml:space="preserve">
+    <value>企業已執行上傳營運單位,不可再執行上傳檔案、匯入資料功能</value>
+  </data>
+  <data name="BU_EnterpriseLabelModifyRecord" xml:space="preserve">
+    <value>標籤異動記錄</value>
+  </data>
+  <data name="Upload_FileExists" xml:space="preserve">
+    <value>清單內相同檔案，是否上傳覆蓋?</value>
+  </data>
+  <data name="Confirm_Delete" xml:space="preserve">
+    <value>您確認要刪除嗎</value>
+  </data>
+  <data name="EP_NoModifyCompareRecord" xml:space="preserve">
+    <value>無比對記錄查詢</value>
+  </data>
+  <data name="LB_ProductionUnitID_Exists" xml:space="preserve">
+    <value>單位編號已經存在!</value>
+  </data>
+  <data name="LB_ProductionUnitID_NotNull" xml:space="preserve">
+    <value>單位編號不能為空!</value>
+  </data>
+  <data name="LB_ProductionUnitName_NotNull" xml:space="preserve">
+    <value>生產單位名稱不能為空!</value>
+  </data>
+  <data name="LB_WarehouseID_Exists" xml:space="preserve">
+    <value>倉庫編號已經存在!</value>
+  </data>
+  <data name="LB_WarehouseID_NotNull" xml:space="preserve">
+    <value>倉庫編號不能為空!</value>
+  </data>
+  <data name="LB_WarehouseName_NotNull" xml:space="preserve">
+    <value>倉庫名稱不能為空!</value>
+  </data>
+  <data name="LB_Order_BillID" xml:space="preserve">
+    <value>訂單單號</value>
+  </data>
+  <data name="LB_Schedule_BillID" xml:space="preserve">
+    <value>計劃單號</value>
+  </data>
+  <data name="LB_EnableMonths_NotNull" xml:space="preserve">
+    <value>啟用年月不能為空!</value>
+  </data>
+  <data name="LB_ServiceYears_NotNull" xml:space="preserve">
+    <value>使用年限不能為空!</value>
+  </data>
+  <data name="LB_StdPages_NotNull" xml:space="preserve">
+    <value>每卷張數不能為空!</value>
+  </data>
+  <data name="LB_StyleName_NotNull" xml:space="preserve">
+    <value>標籤款式名稱不能為空!</value>
+  </data>
+  <data name="LB_Volumes_NotNull" xml:space="preserve">
+    <value>大卷卷數不能為空!</value>
+  </data>
+  <data name="LB_StyleImageTitle1" xml:space="preserve">
+    <value>圖片說明圖示(一級營運用)</value>
+  </data>
+  <data name="LB_StyleImageTitle2" xml:space="preserve">
+    <value>圖片說明圖示(二級企業用)</value>
+  </data>
+  <data name="LB_StyleImageTitle3" xml:space="preserve">
+    <value>圖片說明圖示(三級消費者用)</value>
+  </data>
+  <data name="EP_UploadUnCheck" xml:space="preserve">
+    <value>本次覆核項目已上傳營運單位,是否確認取消覆核</value>
+  </data>
+  <data name="LB_Production_BillID" xml:space="preserve">
+    <value>生產單號</value>
+  </data>
+</root>

@@ -1,0 +1,2 @@
+﻿var formID;
+var fileType;

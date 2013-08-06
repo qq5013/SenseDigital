@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF2A648C-B23E-4730-B840-94E0F7A372C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Js.DAO</RootNamespace>
+    <AssemblyName>Js.DAO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\PermissionDao.cs" />
+    <Compile Include="Account\RoleDao.cs" />
+    <Compile Include="Account\UserDao.cs" />
+    <Compile Include="BaseDao.cs" />
+    <Compile Include="BusinessUnit\CompanyDao.cs" />
+    <Compile Include="BusinessUnit\ParameterDao.cs" />
+    <Compile Include="BusinessUnit\CheckDao.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Enterprise\CheckDao.cs" />
+    <Compile Include="Label\LabelDao.cs" />
+    <Compile Include="Label\OrderDao.cs" />
+    <Compile Include="Label\ProductionDao.cs" />
+    <Compile Include="Label\StyleDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rpt\RptDao.cs" />
+    <Compile Include="SubBaseDao.cs" />
+    <Compile Include="BusinessUnit\EnterpriseDao.cs" />
+    <Compile Include="System\MessageDao.cs" />
+    <Compile Include="Sys\SysComDao.cs" />
+    <Compile Include="Sys\SysLabelDao.cs" />
+    <Compile Include="Sys\SysManageDao.cs" />
+    <Compile Include="TableFieldInfo.cs" />
+    <Compile Include="Sys\TreeListDao.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DBAccessLayer\DBAccessLayer.csproj">
+      <Project>{00673C18-7E2F-4A31-88F4-BF788F662066}</Project>
+      <Name>DBAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

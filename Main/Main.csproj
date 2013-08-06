@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A748F6AC-78A3-4C6A-B857-923E589E4426}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseData\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmBatchUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmBatchUpdate.Designer.cs">
+      <DependentUpon>frmBatchUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmEnterpriseDbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmEnterpriseDbs.Designer.cs">
+      <DependentUpon>frmEnterpriseDbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmEnterpriseDbEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmEnterpriseDbEdit.Designer.cs">
+      <DependentUpon>frmEnterpriseDbEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmEnterpriseDbView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmEnterpriseDbView.Designer.cs">
+      <DependentUpon>frmEnterpriseDbView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmLabelNoDbEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmLabelNoDbEdit.Designer.cs">
+      <DependentUpon>frmLabelNoDbEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmLabelNoDbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmLabelNoDbs.Designer.cs">
+      <DependentUpon>frmLabelNoDbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmLabelNoDbView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmLabelNoDbView.Designer.cs">
+      <DependentUpon>frmLabelNoDbView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmPassWordConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmPassWordConfirm.Designer.cs">
+      <DependentUpon>frmPassWordConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmUpdateRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmUpdateRecord.Designer.cs">
+      <DependentUpon>frmUpdateRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmUserManagerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmUserManagerEdit.Designer.cs">
+      <DependentUpon>frmUserManagerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmUserManagers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmUserManagers.Designer.cs">
+      <DependentUpon>frmUserManagers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseData\frmUserManagerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseData\frmUserManagerView.Designer.cs">
+      <DependentUpon>frmUserManagerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmConnect.Designer.cs">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\frmSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\frmSchedule.Designer.cs">
+      <DependentUpon>frmSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\frmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sys\frmSelect.designer.cs">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseData\frmBatchUpdate.resx">
+      <DependentUpon>frmBatchUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmEnterpriseDbs.resx">
+      <DependentUpon>frmEnterpriseDbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmEnterpriseDbEdit.resx">
+      <DependentUpon>frmEnterpriseDbEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmEnterpriseDbView.resx">
+      <DependentUpon>frmEnterpriseDbView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmLabelNoDbEdit.resx">
+      <DependentUpon>frmLabelNoDbEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmLabelNoDbs.resx">
+      <DependentUpon>frmLabelNoDbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmLabelNoDbView.resx">
+      <DependentUpon>frmLabelNoDbView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmPassWordConfirm.resx">
+      <DependentUpon>frmPassWordConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmUpdateRecord.resx">
+      <DependentUpon>frmUpdateRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmUserManagerEdit.resx">
+      <DependentUpon>frmUserManagerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmUserManagers.resx">
+      <DependentUpon>frmUserManagers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseData\frmUserManagerView.resx">
+      <DependentUpon>frmUserManagerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmConnect.resx">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sys\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\frmSchedule.resx">
+      <DependentUpon>frmSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sys\frmSelect.resx">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{FC57BD8B-A36A-48E3-80B4-D09105AD790D}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Com\Com.csproj">
+      <Project>{FA496EDA-48B2-4758-B5D2-93560BC42B7F}</Project>
+      <Name>Com</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{CF2A648C-B23E-4730-B840-94E0F7A372C8}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

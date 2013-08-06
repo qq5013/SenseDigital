@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>放棄</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExitResource1.Text" xml:space="preserve">
+    <value>離開</value>
+  </data>
+  <data name="btnExitResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource1.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbAdditionalSparesResource1.Text" xml:space="preserve">
+    <value>附備品</value>
+  </data>
+  <data name="ckbAdditionalSparesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbImageSaveResource1.Text" xml:space="preserve">
+    <value>存證圖片</value>
+  </data>
+  <data name="ckbImageSaveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbIsLimitedProductResource1.Text" xml:space="preserve">
+    <value>限用產品</value>
+  </data>
+  <data name="ckbIsLimitedProductResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbWaterProofResource1.Text" xml:space="preserve">
+    <value>防水材質</value>
+  </data>
+  <data name="ckbWaterProofResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlEnableMonthsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlVerificationModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlAntiCounterfeitTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlBaseMaterialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlBeAffixedMaterialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlBeAffixedShapeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlGlueResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlImageLocationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlQRContentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EddlTextureMaterialResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>A.一問一答</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>B.加解密</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ltlAntiCounterfeitTypeResource1.Text" xml:space="preserve">
+    <value>防偽類型</value>
+  </data>
+  <data name="ltlBaseMaterialResource1.Text" xml:space="preserve">
+    <value>基      材</value>
+  </data>
+  <data name="ltlBeAffixedMaterialResource1.Text" xml:space="preserve">
+    <value>被貼物材質</value>
+  </data>
+  <data name="ltlBeAffixedShapeResource1.Text" xml:space="preserve">
+    <value>被貼物形狀</value>
+  </data>
+  <data name="ltlCheckDateResource1.Text" xml:space="preserve">
+    <value>營運覆核日期</value>
+  </data>
+  <data name="ltlCheckUserNameResource1.Text" xml:space="preserve">
+    <value>營運覆核</value>
+  </data>
+  <data name="ltlCreateDateResource1.Text" xml:space="preserve">
+    <value>建檔日期</value>
+  </data>
+  <data name="ltlCreateUserNameResource1.Text" xml:space="preserve">
+    <value>建檔人員</value>
+  </data>
+  <data name="ltlDescriptionResource1.Text" xml:space="preserve">
+    <value>描述說明</value>
+  </data>
+  <data name="ltlEnableMonthsResource1.Text" xml:space="preserve">
+    <value>啟用年限</value>
+  </data>
+  <data name="ltlEnterpriseIDResource1.Text" xml:space="preserve">
+    <value>企業代號</value>
+  </data>
+  <data name="ltlGlueResource1.Text" xml:space="preserve">
+    <value>膠</value>
+  </data>
+  <data name="ltlHeightResource1.Text" xml:space="preserve">
+    <value>(H)</value>
+  </data>
+  <data name="ltlImageLocationResource1.Text" xml:space="preserve">
+    <value>圖像定位</value>
+  </data>
+  <data name="ltlImagePathResource1.Text" xml:space="preserve">
+    <value>圖片檔路徑</value>
+  </data>
+  <data name="ltlLabelModeResource1.Text" xml:space="preserve">
+    <value>標籤模式</value>
+  </data>
+  <data name="ltlLastModifyDateResource1.Text" xml:space="preserve">
+    <value>異動日期</value>
+  </data>
+  <data name="ltlLastModifyUserNameResource1.Text" xml:space="preserve">
+    <value>異動人員</value>
+  </data>
+  <data name="ltlLengthResource1.Text" xml:space="preserve">
+    <value>(L)</value>
+  </data>
+  <data name="ltlLowQuantityResource1.Text" xml:space="preserve">
+    <value>最低訂購量</value>
+  </data>
+  <data name="ltlQRContentResource1.Text" xml:space="preserve">
+    <value>QR 內容</value>
+  </data>
+  <data name="ltlServiceYearsResource1.Text" xml:space="preserve">
+    <value>標籤使用年限</value>
+  </data>
+  <data name="ltlSizeResource1.Text" xml:space="preserve">
+    <value>尺寸(mm)</value>
+  </data>
+  <data name="ltlSparesPercentResource1.Text" xml:space="preserve">
+    <value>備  品  率</value>
+  </data>
+  <data name="ltlStopDateResource1.Text" xml:space="preserve">
+    <value>停用日期</value>
+  </data>
+  <data name="ltlStopUserNameResource1.Text" xml:space="preserve">
+    <value>停用人員</value>
+  </data>
+  <data name="ltlStyleIDResource1.Text" xml:space="preserve">
+    <value>款式編號</value>
+  </data>
+  <data name="ltlTextureMaterialResource1.Text" xml:space="preserve">
+    <value>紋理材質</value>
+  </data>
+  <data name="ltlTitleResource1.Text" xml:space="preserve">
+    <value>標籤款式資料[ 單筆編輯畫面 ]</value>
+  </data>
+  <data name="ltlVerificationModeResource1.Text" xml:space="preserve">
+    <value>驗證方式</value>
+  </data>
+  <data name="ltlWidthResource1.Text" xml:space="preserve">
+    <value>(W)</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHeightResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtHeightResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImagePathResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtImagePathResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLabelModeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLabelModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLengthResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtLengthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLowQuantityResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtLowQuantityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtProduceDescriptionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtProduceDescriptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtServiceYearsResource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtServiceYearsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSparesPercentResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSparesPercentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStopDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStopDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStopUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStopUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStyleIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStyleIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWidthResource1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtWidthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

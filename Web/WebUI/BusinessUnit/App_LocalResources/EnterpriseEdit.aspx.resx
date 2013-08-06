@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCancelResource2.Text" xml:space="preserve">
+    <value>放棄</value>
+  </data>
+  <data name="btnCancelResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExitResource2.Text" xml:space="preserve">
+    <value>離開</value>
+  </data>
+  <data name="btnExitResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveResource2.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btnSaveResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlCategoryIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltlAddressResource1.Text" xml:space="preserve">
+    <value>公司地址</value>
+  </data>
+  <data name="ltlCategoryIDResource1.Text" xml:space="preserve">
+    <value>企業類別</value>
+  </data>
+  <data name="ltlCellPhoneResource1.Text" xml:space="preserve">
+    <value>連絡人行動電話</value>
+  </data>
+  <data name="ltlCheckDateResource1.Text" xml:space="preserve">
+    <value>覆核日期</value>
+  </data>
+  <data name="ltlCheckUserNameResource1.Text" xml:space="preserve">
+    <value>覆核人員</value>
+  </data>
+  <data name="ltlContactPhoneResource1.Text" xml:space="preserve">
+    <value>連絡電話</value>
+  </data>
+  <data name="ltlContactPostResource1.Text" xml:space="preserve">
+    <value>連絡人員職稱</value>
+  </data>
+  <data name="ltlContactResource1.Text" xml:space="preserve">
+    <value>連絡人員</value>
+  </data>
+  <data name="ltlCreateDateResource1.Text" xml:space="preserve">
+    <value>建檔日期</value>
+  </data>
+  <data name="ltlCreateUserNameResource1.Text" xml:space="preserve">
+    <value>建檔人員</value>
+  </data>
+  <data name="ltlEmailResource1.Text" xml:space="preserve">
+    <value>E-MAIL</value>
+  </data>
+  <data name="ltlEnterpriseENameResource1.Text" xml:space="preserve">
+    <value>企業英文名稱</value>
+  </data>
+  <data name="ltlEnterpriseIDResource1.Text" xml:space="preserve">
+    <value>企業編號</value>
+  </data>
+  <data name="ltlEnterpriseNameResource1.Text" xml:space="preserve">
+    <value>企業名稱</value>
+  </data>
+  <data name="ltlEnterpriseSNameResource1.Text" xml:space="preserve">
+    <value>企業簡稱</value>
+  </data>
+  <data name="ltlFaxResource1.Text" xml:space="preserve">
+    <value>公司傳真</value>
+  </data>
+  <data name="ltlLabelFromResource1.Text" xml:space="preserve">
+    <value>標籤生產</value>
+  </data>
+  <data name="ltlLastModifyDateResource1.Text" xml:space="preserve">
+    <value>異動日期</value>
+  </data>
+  <data name="ltlLastModifyUserNameResource1.Text" xml:space="preserve">
+    <value>異動人員</value>
+  </data>
+  <data name="ltlMemoResource1.Text" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="ltlPhoneResource1.Text" xml:space="preserve">
+    <value>公司電話</value>
+  </data>
+  <data name="ltlPresidentPostResource1.Text" xml:space="preserve">
+    <value>負責人員職稱</value>
+  </data>
+  <data name="ltlPresidentResource1.Text" xml:space="preserve">
+    <value>負責人員</value>
+  </data>
+  <data name="ltlTitleResource1.Text" xml:space="preserve">
+    <value>企業用戶资料[ 單筆編輯畫面 ]</value>
+  </data>
+  <data name="ltlUnionIDResource1.Text" xml:space="preserve">
+    <value>官方編號</value>
+  </data>
+  <data name="ltlWebUrlResource1.Text" xml:space="preserve">
+    <value>公司網址</value>
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtLabelFromNoResource1.Text" xml:space="preserve">
+    <value>企業自製</value>
+  </data>
+  <data name="rbtLabelFromNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbtLabelFromYesResource1.Text" xml:space="preserve">
+    <value>營運生產</value>
+  </data>
+  <data name="rbtLabelFromYesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCellPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCellPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCheckUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactPostResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactPostResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCreateUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseENameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseENameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseSNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEnterpriseSNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFaxResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyUserNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastModifyUserNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMemoResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMemoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPresidentPostResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPresidentPostResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPresidentResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPresidentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubMemoResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubMemoResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUnionIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUnionIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebUrlResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebUrlResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>
