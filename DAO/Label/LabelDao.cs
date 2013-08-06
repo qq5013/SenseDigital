@@ -14,7 +14,7 @@ namespace Js.DAO.Label
 
         public LabelDao()
         {
-            ia =  DBAccessLayer.DBFactory.GetDBAccess();
+            ia = DBAccessLayer.DBFactory.GetDBAccess();
         }
         //string strTbName
         /// <summary>
@@ -25,7 +25,7 @@ namespace Js.DAO.Label
             this.cnKey = cnKey;
             ia = DBAccessLayer.DBFactory.GetDBAccess(DBAccessLayer.DBAccessType.SQL, cnKey);
         }
-        
+
         /// <summary>
         /// 獲取標籤序號資訊
         /// </summary>
@@ -33,14 +33,19 @@ namespace Js.DAO.Label
         /// <returns></returns>
         public virtual DataTable GetLabelNoInfo(string labelNo)
         {
-            string tableName = "LB_LabelList_20" + labelNo.Substring(0, 2);
-            string strSql = string.Format("select * from {0} where LabelNo='{1}'",tableName,labelNo);            
-            
-            DataTable dt = ia.ExecuteDataSetSql(strSql).Tables[0];           
+            string StyleID = labelNo.Substring(2, 2);
+            int LabelNo = int.Parse(labelNo.Substring(4));
+            int i = LabelNo / 1000000;
+            string TableNo = i.ToString().PadLeft(4,'0');
+
+            string tableName = "LB_" + StyleID + "_" + TableNo;
+            string strSql = string.Format("select * from {0} where LabelNo='{1}'", tableName, labelNo);
+
+            DataTable dt = ia.ExecuteDataSetSql(strSql).Tables[0];
 
             return dt;
         }
-        
+
     }
 }
 

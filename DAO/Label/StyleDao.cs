@@ -25,7 +25,15 @@ namespace Js.DAO.Label
             this.cnKey = cnKey;
             ia = DBAccessLayer.DBFactory.GetDBAccess(DBAccessLayer.DBAccessType.SQL, cnKey);
         }
-        
+        //string strTbName
+        /// <summary>
+        /// 初始化
+        /// </summary>
+        public StyleDao(string FormID, string cnKey)
+        {
+            this.cnKey = cnKey;
+            ia = DBAccessLayer.DBFactory.GetDBAccess(DBAccessLayer.DBAccessType.SQL, cnKey);
+        }
         /// <summary>
         /// 獲取記錄，用原表名
         /// </summary>

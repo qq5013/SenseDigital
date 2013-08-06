@@ -120,7 +120,7 @@
                                 <asp:Literal ID="Literal10" Text="來源單號" runat="server"></asp:Literal>
                                 </td>
                                  <td >
-								<asp:textbox id="txtSourceBillID" runat="server" CssClass="TextRead" Width="60%" 
+								<asp:textbox id="txtSourceBillID" runat="server" CssClass="TextRead" Width="77%" 
                                 MaxLength="20" ></asp:textbox>
                                 
                                 </td>
@@ -130,8 +130,8 @@
 						<td class="musttitle" align="center" width="10%" ><asp:Literal ID="LitStyleID" Text="款式編號" runat="server"></asp:Literal>
                         </td>
 						<td width="20%" align ="left" colspan="5" >&nbsp;
-                        <asp:TextBox ID="txtStyleID" runat="server" CssClass="TextRead"></asp:TextBox>
-                        <asp:TextBox ID="txtStyleName" runat="server" CssClass="TextRead" Width="65%"
+                        <asp:TextBox ID="txtStyleID" runat="server" CssClass="TextRead" Width="153px"></asp:TextBox>
+                        <asp:TextBox ID="txtStyleName" runat="server" CssClass="TextRead" Width="75%"
                                 MaxLength="20" ></asp:TextBox>
                         </td>
 						
@@ -162,7 +162,7 @@
                                 runat="server"></asp:Literal>
                         </td>
                          <td  width="20%">
-                             <cc1:DataText runat="server" DataValue="0" CssClass="TextRead" Width="86%" 
+                             <cc1:DataText runat="server" DataValue="0" CssClass="TextRead" Width="77%" 
                                                             ID="txtVolumes">0</cc1:DataText>
                         </td>
                          <td><asp:button id="btnStyleQuery" runat="server" Text=" 款式查詢" 
@@ -213,7 +213,7 @@
                         </td>
 						<td width="20%" align ="left" >&nbsp;
                                 <asp:DropDownList ID="ddlProductionUnitID" runat="server" 
-                                Width="60%" ></asp:DropDownList>
+                                Width="85%" Height="16px" ></asp:DropDownList>
                         </td>
 						<td  class="smalltitle"  align="center" width="10%">
                             <asp:Literal ID="Literal24" Text="入庫日期"
@@ -228,7 +228,7 @@
                                 runat="server"></asp:Literal>
                             </td>
                         <td >
-                            <asp:textbox id="txtScheduleBillID" runat="server" CssClass="TextRead" Width="60%" 
+                            <asp:textbox id="txtScheduleBillID" runat="server" CssClass="TextRead" Width="77%" 
                                 MaxLength="20" ></asp:textbox>
                             </td>
                              <td><asp:button id="btnGet" runat="server" Text=" 取用序號" 

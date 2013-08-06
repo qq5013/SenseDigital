@@ -21,19 +21,12 @@
         <script type="text/javascript" src='<%=ResolveUrl("~/JScript/superTables.js") %>'></script>
         <script type="text/javascript" src='<%=ResolveUrl("~/JScript/Scrolltable.js") %>'></script>
         <script type="text/javascript" src="Js/Production.js"></script>
-
-        <script type="text/javascript" src='<%=ResolveUrl("~/JScript/EditDropDownList/Js/jquery.ui.core.js") %>'></script> 
-        <script type="text/javascript" src='<%=ResolveUrl("~/JScript/EditDropDownList/Js/jquery.ui.widget.js") %>'></script> 
-        <script type="text/javascript" src='<%=ResolveUrl("~/JScript/EditDropDownList/Js/jquery.ui.button.js") %>'></script> 
-        <script type="text/javascript" src='<%=ResolveUrl("~/JScript/EditDropDownList/Js/jquery.ui.position.js") %>'></script> 
-        <script type="text/javascript" src='<%=ResolveUrl("~/JScript/EditDropDownList/Js/jquery.ui.autocomplete.js") %>'></script> 
-        <script type="text/javascript" src='<%=ResolveUrl("~/JScript/EditDropDownList/Js/jquery.ui.combobox.js") %>'></script> 
         
         <script type="text/javascript" src='<%=ResolveUrl("~/JScript/Commons.js") %>'></script>
         <script type="text/javascript" src='<%=ResolveUrl("~/JScript/DataProcess.js") %>'></script>
         <script type="text/javascript" src='<%=ResolveUrl("~/JScript/Ajax.js") %>'></script>   
         <script type="text/javascript">
-//            var strDateFormat = "y/MM/dd";
+            //            var strDateFormat = "y/MM/dd";
             $(document).ready(function () {
                 $('#txtStyleID').bind('dblclick', function () {
                     GetOtherJsonValue('LB_Style', cnKey, 'StyleID,StyleName,Volumes,StdPages', 'txtStyleID,txtStyleName,txtProducePages,txtStdPages');
@@ -66,28 +59,11 @@
                     parent.addTab('../WebUI/Label/Styles.aspx?FormID=LB_Style', '標籤款式資料設定', 'tab_2_4');
                     return false;
                 });
-                $("#btnStyleQuery").bind("click", function () {
-                    addTab('/WebUI/Label/Styles.aspx', '標籤款式資料設定','tab_2_4');
+                $("#btnImageQuery").bind("click", function () {
+                    window.showModalDialog('ImageQuery.aspx?BillID=' + $("#txtBillID").val() + '&Flag=3&ID=' + $("#txtStyleID").val(), null, 'DialogHeight:280px;DialogWidth:600px;help:no;scroll:no');
                     return false;
                 });
-                function addTab(url, name, idName) {
-                    //alert(tabs.items);
-                    if (this.parent.tabs.findById(idName) != null) {
-                        this.parent.tabs.setActiveTab(idName);
-                        this.parent.window.frames[idName].location.reload();
-                        return;
-                    }
-                    var closeable = true;
 
-                    this.parent.tabs.add({
-                        title: name,
-                        id: idName,
-                        layout: 'fit',
-                        iconCls: 'tabs',
-                        html: "<iframe id='" + idName + "' src='" + url + "' width='100%' height='100%' frameborder='1' style='overflow:hidden' scrolling='no' ></iframe>",
-                        closable: closeable
-                    }).show();
-                }
                 $('#btnGet').bind('click', function () {
                     var ProducePages = $('#txtProducePages').val();
                     var minpages = $('#txtMinProducePages').val();
@@ -234,7 +210,7 @@
             </table>
 			<table class="maintable" cellspacing="0" cellpadding="0" width="100%" align="center" borderColor="#ffffff" border="1" >
 					<tr>
-						<td  valign="middle" align="left" colspan="6" height="22" class="title1">
+						<td  valign="middle" align="left" colspan="7" height="22" class="title1">
 							<p><asp:Literal ID="ltlTitle" Text="標籤生產單[ 單筆編輯畫面 ]" runat="server"></asp:Literal></p>
 						</td>
 					</tr>
@@ -254,27 +230,25 @@
                                 MaxLength="20" ></asp:textbox>
                                 
                                 </td>
-                        <td class="smalltitle" >
+                        <td class="smalltitle"  align="center" width="10%" >
                                 <asp:Literal ID="Literal10" Text="來源單號" runat="server"></asp:Literal>
                                 </td>
                                  <td >
-								<asp:textbox id="txtSourceBillID" runat="server" CssClass="Textbox" Width="60%" 
+								&nbsp;&nbsp;
+								<asp:textbox id="txtSourceBillID" runat="server" CssClass="Textbox" Width="70%" 
                                 MaxLength="20" ></asp:textbox>
                                 
-                                </td>
-                        <td></td>
+                                </td>                        
 					</tr>
                     <tr>
 						<td class="musttitle" align="center" width="10%" ><asp:Literal ID="LitStyleID" Text="款式編號" runat="server"></asp:Literal>
                         </td>
 						<td width="20%" align ="left" colspan="5" >&nbsp;
                         <asp:TextBox ID="txtStyleID" runat="server" CssClass="Textbox"></asp:TextBox>  <input id="txtStyleID1" type="hidden" runat="server" />
-                        <asp:TextBox ID="txtStyleName" runat="server" CssClass="TextRead" Width="65%"
+                        <asp:TextBox ID="txtStyleName" runat="server" CssClass="TextRead" Width="77%"
                                 MaxLength="20" ></asp:TextBox>
                         </td>
 						
-                                     <td>
-								         &nbsp;</td>
 					</tr>
                 
                     <tr>
@@ -306,16 +280,17 @@
                                 style="width:60%;text-align:right;padding-right:2px;" CssClass="Textbox"></asp:textbox>
                             <input  style="width:10%"id="txtpages" type="hidden" />
                             </td>
-                        <td  width="20%" class="smalltitle" >
+                        <td  class="smalltitle" align="center" width="10%" >
                               <asp:Literal 
                                 ID="Literal12" Text="生產張數"
                                 runat="server"></asp:Literal>
                         </td>
                          <td  width="20%">
-                             <cc1:DataText runat="server" DataValue="0" CssClass="TextRead" Width="86%" 
+                             &nbsp;&nbsp;
+                             <cc1:DataText runat="server" DataValue="0" CssClass="TextRead" Width="70%" 
                                                             ID="txtVolumes">0</cc1:DataText>
                         </td>
-                         <td><asp:button id="btnStyleQuery" runat="server" Text=" 款式查詢" 
+                         <td>&nbsp; <asp:button id="btnStyleQuery" runat="server" Text=" 款式查詢" 
                                             CssClass="but" Width="75px"  
                                 
                                  
@@ -341,19 +316,20 @@
                                 MaxLength="20" ></asp:textbox>
                                 
                                 </td>
-                         <td  width="20%" class="smalltitle" >
+                         <td  class="smalltitle" align="center" width="10%" >
                               <asp:Literal 
-                                ID="Literal22" Text="單況"
+                                ID="Literal22" Text="單&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;況"
                                 runat="server"></asp:Literal>
                         </td>
                          <td  width="20%">
-                             <asp:DropDownList ID="ddlBillState" runat="server" Enabled="false" Width="35%">
+                             &nbsp;&nbsp;
+                             <asp:DropDownList ID="ddlBillState" runat="server" Enabled="false" Width="70%">
                                     <asp:ListItem Value="0">無效</asp:ListItem>                                    
                                     <asp:ListItem Value="1">有效</asp:ListItem>
                                     <asp:ListItem Value="2">已入庫</asp:ListItem>
                                 </asp:DropDownList>
                         </td>
-                         <td><asp:button id="btnImageQuery" runat="server" Text=" 款式圖片" 
+                         <td>&nbsp; <asp:button id="btnImageQuery" runat="server" Text=" 款式圖片" 
                                             CssClass="but" Width="75px" Enabled="False">
                                     </asp:button>
                         </td>
@@ -375,15 +351,16 @@
                             <uc2:Calendar ID="txtPreInStockDate" runat="server" 
                                  />
                         </td>
-                        <td class="smalltitle" >
+                        <td class="smalltitle" align="center" width="10%" >
                             <asp:Literal ID="Literal19" Text="排程單號"
                                 runat="server"></asp:Literal>
                             </td>
                         <td >
-                            <asp:textbox id="txtScheduleBillID" runat="server" CssClass="TextRead" Width="60%" 
+                            &nbsp;&nbsp;
+                            <asp:textbox id="txtScheduleBillID" runat="server" CssClass="TextRead" Width="70%" 
                                 MaxLength="20" ></asp:textbox>
                             </td>
-                             <td><asp:button id="btnGet" runat="server" Text=" 取用序號" 
+                             <td>&nbsp; <asp:button id="btnGet" runat="server" Text=" 取用序號" 
                                             CssClass="but" Width="75px" Enabled="False"></asp:button>
                                 </td>
 					</tr>

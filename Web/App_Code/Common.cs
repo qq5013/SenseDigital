@@ -5,6 +5,8 @@ using System.Web;
 using System.Data;
 using System.Web.SessionState;
 using System.IO;
+using System.Text;
+using System.Security.Cryptography;
 
 /// <summary>
 /// Summary description for Common
@@ -165,4 +167,53 @@ public class Common
         if (System.IO.File.Exists(strFile))
             System.IO.File.Delete(strFile);
     }
+    /// <summary>   
+    /// DES 加密字串   
+    /// </summary>   
+    /// <param name="original">原始字串</param>   
+    /// <param name="key">Key，長度必須為 8 個 ASCII 字元</param>   
+    /// <param name="iv">IV，長度必須為 8 個 ASCII 字元</param>   
+    /// <returns></returns>   
+    public string EncryptDES(string original)
+    {
+        try
+        {
+            DESCryptoServiceProvider des = new DESCryptoServiceProvider();
+            //des.Key = Encoding.ASCII.GetBytes(Key);
+            //des.IV = Encoding.ASCII.GetBytes(Iv);
+            byte[] s = Encoding.ASCII.GetBytes(original);
+            ICryptoTransform desencrypt = des.CreateEncryptor();
+            return BitConverter.ToString(desencrypt.TransformFinalBlock(s, 0, s.Length)).Replace("-", string.Empty);
+        }
+        catch { return original; }
+    }
+
+    /// <summary>   
+    /// DES 解密字串   
+    /// </summary>   
+    /// <param name="hexString">加密後 Hex String</param>   
+    /// <param name="key">Key，長度必須為 8 個 ASCII 字元</param>   
+    /// <param name="iv">IV，長度必須為 8 個 ASCII 字元</param>   
+    /// <returns></returns>   
+    private string DecryptDES(string hexString)
+    {
+        try
+        {
+            DESCryptoServiceProvider des = new DESCryptoServiceProvider();
+            //des.Key = Encoding.ASCII.GetBytes(Key);
+            //des.IV = Encoding.ASCII.GetBytes(Iv);
+
+            byte[] s = new byte[hexString.Length / 2];
+            int j = 0;
+            for (int i = 0; i < hexString.Length / 2; i++)
+            {
+                s[i] = Byte.Parse(hexString[j].ToString() + hexString[j + 1].ToString(), System.Globalization.NumberStyles.HexNumber);
+                j += 2;
+            }
+            ICryptoTransform desencrypt = des.CreateDecryptor();
+            return Encoding.ASCII.GetString(desencrypt.TransformFinalBlock(s, 0, s.Length));
+        }
+        catch { return hexString; }
+    }
+
 }
